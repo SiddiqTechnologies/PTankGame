@@ -1,4 +1,7 @@
-var game = new Phaser.Game(1366, 768, Phaser.AUTO);
+// var game = new Phaser.Game(768, 1366, Phaser.AUTO);
+var game = new Phaser.Game(window.innerWidth * window.devicePixelRatio, window.innerHeight * window.devicePixelRatio, Phaser.CANVAS, 'gameArea');
+var scaleRatio = window.devicePixelRatio / 3;
 game.state.add('BootState', BootState);
 game.state.add('PreLoadState', PreLoadState);
+game.state.add('TitleScreen', TitleScreen);
 game.state.start('BootState');

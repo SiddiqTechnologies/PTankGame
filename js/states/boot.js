@@ -7,10 +7,10 @@ var BootState = {
     preload: function () {
         console.log('Boot State Started');
         this.load.image('preloadBar', 'assests/images/bar.png');
-        this.load.image('logo', 'assests/images/logo.png');
+        this.load.image('logo', 'assests/images/tank.png');
     },
     create: function () {
-        this.game.stage.backgroundColor = "#700000";
+        this.game.stage.backgroundColor = "#dddddd";
         game.state.start('PreLoadState');        
     }
 };
